@@ -25,6 +25,10 @@ Route::get('/hello Soleh', function () {
     return 'Hellow Unang!';
 });
 
-Route::get('/helo komar', function(){
+Route::get('/helo komar', function () {
     return 'Hello komar bapak fajar';
-})
+});
+
+Route::get('/helo iwehfwehf', function () {
+    return 'oiewoewyrowyrow';
+});
