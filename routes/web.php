@@ -32,3 +32,7 @@ Route::get('/helo komar', function () {
 Route::get('/helo iwehfwehf', function () {
     return 'oiewoewyrowyrow';
 });
+
+Route::get('/about', function () {
+    return 'about you';
+});
