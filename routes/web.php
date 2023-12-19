@@ -33,5 +33,6 @@ Route::get('/Helo World', function () {
     return 'World Hello';
 });
 
-
-
+Route::get('/about', function () {
+    return 'about you';
+});
