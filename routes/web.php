@@ -24,3 +24,7 @@ Route::get('/hello', function () {
 Route::get('/hello Soleh', function () {
     return 'Hellow Unang!';
 });
+
+Route::get('/helo komar', function(){
+    return 'Hello komar bapak fajar';
+})
