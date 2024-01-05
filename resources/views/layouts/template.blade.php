@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style>
         :root {
-        --primary: #bd8ceb;
-        --bg: #0C134F;
-        --hover: #3498db;
+            --primary: #bd8ceb;
+            --bg: #0C134F;
+            --hover: #3498db;
         }
+
         * {
             font-family: Pangram-ExtraLight;
         }
@@ -26,7 +27,8 @@
             src: url({{ asset('PangramSans-FreeForPersonalUse/Pangram-FullFamily-FreeForPersonalUse/Pangram-Bold.otf') }});
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
         body {
             margin: 0;
@@ -34,21 +36,27 @@
             line-height: 1.5;
             font-family: 'Poppins', sans-serif;
             min-height: 1000px;
-
         }
-        
 
         .nav {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             width: 100%;
-            height: 100px;
+            height: 90px;
             background: var(--bg);
             color: #03AEC6;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            padding-left: 90px;
+            padding-right: 90px;
         }
 
         .nav img {
             width: 100px;
+
         }
 
         .nav h4 {
@@ -57,6 +65,7 @@
 
         .nav input {
             width: 600px;
+            border-radius: 8px;
         }
 
         .nav i {
@@ -88,14 +97,13 @@
 
         .footer {
             background-color: var(--bg);
-            padding: 70px 0;
+            padding: 60px 0 20px;
             position: relative;
-            
         }
 
         .footer-col {
             width: 25%;
-            padding: 0 15px;
+            /* padding: 10px; */
         }
 
         .footer-col h4 {
@@ -118,6 +126,12 @@
             width: 50px;
         }
 
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
         .footer-col ul li:not(:last-child) {
             margin-bottom: 10px;
         }
@@ -138,6 +152,11 @@
             padding-left: 8px;
         }
 
+        .footer-col .social-links {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         .footer-col .social-links a {
             display: inline-block;
             height: 40px;
@@ -146,9 +165,13 @@
             margin: 0 10px 10px 0;
             text-align: center;
             line-height: 40px;
-            border-radius: 50%;
+            border-radius: 30%;
             color: #ffffff;
             transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links img {
+            padding-right: 70px;
         }
 
         .footer-col .social-links a:hover {
@@ -156,7 +179,6 @@
             background-color: #ffffff;
         }
 
-        /*responsive*/
         @media(max-width: 767px) {
             .footer-col {
                 width: 50%;
@@ -176,9 +198,10 @@
 <body>
     <div class="nav">
         <img src="{{ asset('img/logotranparan.png') }}" alt="">
-        <h4>LapCug TECH</h4>
+        <h4>LapCug.TECH</h4>
         <label for="search" style="color: white; margin:20px;">Cari Produk</label>
-        <input type="text" name="search" id="search" placeholder="Cari Produk Disini...">
+        <input style="padding-left: 10px; " type="text" name="search" id="search"
+            placeholder="Cari Produk Disini...">
         <i class="bi bi-cart"></i>
 
         <button type="button" style="margin-left: 30px;" class="btn btn-outline-info">Login</button>
@@ -196,17 +219,24 @@
                 <div class="footer-col">
                     <h4>Tentang LapCug .TECH</h4>
                     <ul>
-                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa incidunt earum tenetur porro, eligendi ullam repellendus dolorum tempora. Quos expedita et odio nemo similique voluptates porro assumenda atque unde exercitationem eius sapiente pariatur reiciendis, dolore repellat magni, iusto voluptate hic quas itaque. Veritatis, quod eveniet dicta velit voluptas dolorum reprehenderit?</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa incidunt
+                                earum tenetur porro, eligendi ullam repellendus dolorum tempora. Quos expedita et odio
+                                nemo similique voluptates porro assumenda atque unde exercitationem eius sapiente
+                                pariatur reiciendis, dolore repellat magni, iusto voluptate hic quas itaque. Veritatis,
+                                quod eveniet dicta velit voluptas dolorum reprehenderit?</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Jual</h4>
                     <ul>
-                        <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, repellat voluptates aliquam est voluptatum sint?</a></li>
+                        <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, repellat
+                                voluptates aliquam est voluptatum sint?</a></li>
                     </ul>
                     <br><br>
-                     <ul>
-                        <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quo aperiam, aliquam nihil, repellat nobis quis veniam officiis excepturi iste perferendis, est dolorum tempora neque?</a></li>
+                    <ul>
+                        <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quo
+                                aperiam, aliquam nihil, repellat nobis quis veniam officiis excepturi iste perferendis,
+                                est dolorum tempora neque?</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -218,7 +248,7 @@
                 <div class="footer-col">
                     <h4>follow us</h4>
                     <div class="social-links">
-                    <img src="{{ asset('img/logotranparan.png') }}" alt="logoLapCug" style="max-width: 100%; max-height: 20rem;">
+                        <img width="350" src="{{ asset('img/logotranparan.png') }}" alt="logoLapCug">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
