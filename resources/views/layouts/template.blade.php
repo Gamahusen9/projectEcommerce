@@ -11,209 +11,58 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <title>LapCug. TECH</title>
     <style>
-        :root {
-            --primary: #bd8ceb;
-            --bg: #0C134F;
-            --hover: #3498db;
-        }
-
-        * {
-            font-family: Pangram-ExtraLight;
-        }
-
-        @font-face {
-            font-family: Pangram-ExtraLight;
-            src: url({{ asset('PangramSans-FreeForPersonalUse/Pangram-FullFamily-FreeForPersonalUse/Pangram-Bold.otf') }});
-        }
-
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
         body {
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-            font-family: 'Poppins', sans-serif;
-            min-height: 1000px;
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            height: 90px;
-            background: var(--bg);
-            color: #03AEC6;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            padding-left: 90px;
-            padding-right: 90px;
-        }
-
-        .nav img {
-            width: 100px;
-
-        }
-
-        .nav h4 {
-            color: #03AEC6;
-        }
-
-        .nav input {
-            width: 600px;
-            border-radius: 8px;
-        }
-
-        .nav i {
-            font-size: 30px;
-            margin-left: 30px;
-            width: 50px;
-            padding-left: 10px;
-            padding-top: 3px;
-            background: #5C469C;
-            border-radius: 5px;
-            height: 50px;
-            color: white;
-        }
-
-        /* FOOTER */
-        .container {
-            max-width: 1170px;
-            margin: auto;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .footer {
-            background-color: var(--bg);
-            padding: 60px 0 20px;
-            position: relative;
-        }
-
-        .footer-col {
-            width: 25%;
-            /* padding: 10px; */
-        }
-
-        .footer-col h4 {
-            font-size: 18px;
-            color: #ffffff;
-            text-transform: capitalize;
-            margin-bottom: 35px;
-            font-weight: 500;
-            position: relative;
-        }
-
-        .footer-col h4::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            background-color: var(--primary);
-            height: 2px;
-            box-sizing: border-box;
-            width: 50px;
-        }
-
-        .footer-col ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer-col ul li:not(:last-child) {
-            margin-bottom: 10px;
-        }
-
-        .footer-col ul li a {
-            font-size: 16px;
-            text-transform: capitalize;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 300;
-            color: #bbbbbb;
-            display: block;
-            transition: all 0.3s ease;
-        }
-
-        .footer-col ul li a:hover {
-            color: #ffffff;
-            padding-left: 8px;
-        }
-
-        .footer-col .social-links {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .footer-col .social-links a {
-            display: inline-block;
-            height: 40px;
-            width: 40px;
-            background-color: rgba(255, 255, 255, 0.2);
-            margin: 0 10px 10px 0;
-            text-align: center;
-            line-height: 40px;
-            border-radius: 30%;
-            color: #ffffff;
-            transition: all 0.5s ease;
-        }
-
-        .footer-col .social-links img {
-            padding-right: 70px;
-        }
-
-        .footer-col .social-links a:hover {
-            color: #24262b;
-            background-color: #ffffff;
-        }
-
-        @media(max-width: 767px) {
-            .footer-col {
-                width: 50%;
-                margin-bottom: 30px;
-            }
-        }
-
-        @media(max-width: 574px) {
-            .footer-col {
-                width: 100%;
-            }
+            font-family: "Poppins", sans-serif;
         }
     </style>
-    <title>LapCug. TECH</title>
 </head>
 
 <body>
-    <div class="nav">
-        <img src="{{ asset('img/logotranparan.png') }}" alt="">
-        <h4>LapCug.TECH</h4>
-        <label for="search" style="color: white; margin:20px;">Cari Produk</label>
-        <input style="padding-left: 10px; " type="text" name="search" id="search"
-            placeholder="Cari Produk Disini...">
-        <i class="bi bi-cart"></i>
+    <nav class="navbar navbar-expand-lg fw-bold" style="background-color: #0c134f">
+        <div class="container">
+            <img src="{{ asset('img/logotranparan.png') }}" width="70" alt="">
+            <a class="navbar-brand fs-3" style="color: #03AEC6" href="#">LapCug.Tech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Kategori
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex mx-auto" role="search">
+                    <input class="form-control me-2 align-content-center mx-2" type="search"
+                        placeholder="Cari di lapcug" aria-label="Search" style="width: 690px; ">
+                </form>
+                <button class="btn btn-primary mx-2" type="submit"><i class="bi bi-cart fs-4"></i></button>
+                <button class="btn btn-outline-info mx-3" type="submit">Login</button>
+                <button class="btn btn-warning " type="submit">Register</button>
+            </div>
+        </div>
+    </nav>
 
-        <button type="button" style="margin-left: 30px;" class="btn btn-outline-info">Login</button>
-        <button type="button" style="margin-left: 10px;" class="btn btn-warning">Register</button>
-    </div>
-    <div class="container">
-        {{-- bagian dinamis yang akan berubah tiap pagenya, harus di isi di file yang extends ke template ini --}}
-        @yield('content')
-    </div>
+
 
     {{-- FOOTER --}}
-    <footer class="footer">
+    {{-- <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
@@ -257,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> --}}
 </body>
 
 </html>
