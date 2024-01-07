@@ -142,13 +142,13 @@
                     <h4 class="text-light">Ikuti kami!</h4>
                     <div class="social-links mt-4">
                         <a href="#" class="text-light"><i
-                                class="bi bi-facebook fs-3 bg-secondary rounded-3 p-2"></i></a>
+                                class="bi bi-facebook fs-3 bg-primary rounded-3 py-1 px-2"></i></a>
                         <a href="#" class="text-light"><i
-                                class="bi bi-instagram fs-3 bg-secondary rounded-3 p-2"></i></a>
+                                class="bi bi-instagram fs-3 bg-danger rounded-3 py-1 px-2"></i></a>
                         <a href="#" class="text-light"><i
-                                class="bi bi-twitter-x fs-3 bg-secondary rounded-3 p-2"></i></a>
+                                class="bi bi-twitter-x fs-3 bg-black rounded-3 py-1 px-2"></i></a>
                         <a href="#" class="text-light"><i
-                                class="bi bi-pinterest fs-3 bg-secondary rounded-3 p-2"></i></a>
+                                class="bi bi-pinterest fs-3 bg-danger rounded-3 py-1 px-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-1 mb-5 text-center align-self-center ml-md-3">
