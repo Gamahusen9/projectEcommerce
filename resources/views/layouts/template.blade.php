@@ -26,7 +26,7 @@
         }
 
         body {
-            --sb-track-color: #c1e1e6;
+            --sb-track-color: #0c134f;
             --sb-thumb-color: #202230;
             --sb-size: 14px;
 
@@ -45,7 +45,7 @@
         body::-webkit-scrollbar-thumb {
             background: var(--sb-thumb-color);
             border-radius: 30px;
-            border: 2px solid #00a4ef;
+            border: 2px solid #113e53;
         }
 
         .owl-carousel .item img {
@@ -140,15 +140,15 @@
                 </div>
                 <div class="col-md-2 mx-3">
                     <h4 class="text-light">Ikuti kami!</h4>
-                    <div class="social-links">
+                    <div class="social-links mt-4">
                         <a href="#" class="text-light"><i
-                                class="fab fa-twitter fs-3 bg-primary rounded-4 p-2"></i></a>
+                                class="bi bi-facebook fs-3 bg-secondary rounded-3 p-2"></i></a>
                         <a href="#" class="text-light"><i
-                                class="fab fa-instagram fs-3 bg-danger rounded-4 p-2 "></i></a>
+                                class="bi bi-instagram fs-3 bg-secondary rounded-3 p-2"></i></a>
                         <a href="#" class="text-light"><i
-                                class="fab fa-facebook fs-3 bg-primary rounded-4 p-2 "></i></a>
+                                class="bi bi-twitter-x fs-3 bg-secondary rounded-3 p-2"></i></a>
                         <a href="#" class="text-light"><i
-                                class="fab fa-pinterest fs-3 bg-danger rounded-4 p-2 "></i></a>
+                                class="bi bi-pinterest fs-3 bg-secondary rounded-3 p-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-1 mb-5 text-center align-self-center ml-md-3">

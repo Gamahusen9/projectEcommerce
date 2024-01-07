@@ -7,6 +7,8 @@
                 <div class="item"><img class="rounded-4" src="{{ asset('img/thumbnail.jpg') }}" alt=""></div>
                 <div class="item"><img class="rounded-4" src="{{ asset('img/thumbnail1.jpg') }}" alt=""></div>
                 <div class="item"><img class="rounded-4" src="{{ asset('img/thumbnail2.jpg') }}" alt=""></div>
+                <div class="item"><img class="rounded-4" src="{{ asset('img/thumbnail3.jpg') }}" alt=""></div>
+                <div class="item"><img class="rounded-4" src="{{ asset('img/thumbnail4.jpg') }}" alt=""></div>
             </div>
         </div>
 
@@ -16,87 +18,21 @@
                 <div class=" card pt-4 pb-5 mx-5 px-3 rounded-4" style="background-color:#0c134f;">
                     <div class="card-body text-light ">
                         <h4 class="card-title">Kategori Pilihan :</h4>
-                        <div class="d-flex pt-3">
-                            <div class="card bg-primary-subtle rounded-3 mx-2">
-                                <div class="card-body">
-                                    <img class="border rounded-3" width="140"
-                                        src="{{ asset('img/cardproduklegion.jpg') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="card bg-primary-subtle rounded-3 mx-2">
-                                <div class="card-body">
-                                    <img class="border rounded-3" width="140"
-                                        src="{{ asset('img/cardproduklegion.jpg') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="card bg-primary-subtle rounded-3 mx-2">
-                                <div class="card-body">
-                                    <img class="border rounded-3" width="140"
-                                        src="{{ asset('img/cardproduklegion.jpg') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="card bg-primary-subtle rounded-3 mx-2">
-                                <div class="card-body">
-                                    <img class="border rounded-3" width="140"
-                                        src="{{ asset('img/cardproduklegion.jpg') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="card bg-primary-subtle rounded-3 mx-2">
-                                <div class="card-body">
-                                    <img class="border rounded-3" width="140"
-                                        src="{{ asset('img/cardproduklegion.jpg') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="card bg-primary-subtle rounded-3 mx-2">
-                                <div class="card-body">
-                                    <img class="border rounded-3" width="140"
-                                        src="{{ asset('img/cardproduklegion.jpg') }}" alt="">
-                                </div>
-                            </div>
+                        <div class="d-flex pt-3 ">
+                            <img class="border border-dark-subtle border-5 rounded-3 mx-auto" width="160"
+                                src="{{ asset('img/kategori_pilihan/accerlp.jpg') }}" alt="">
+                            <img class="border border-dark-subtle border-5 rounded-3 mx-auto" width="160"
+                                src="{{ asset('img/kategori_pilihan/maclp.jpg') }}" alt="">
+                            <img class="border border-dark-subtle border-5 rounded-3 mx-auto" width="160"
+                                src="{{ asset('img/kategori_pilihan/hplp.jpg') }}" alt="">
+                            <img class="border border-dark-subtle border-5 rounded-3 mx-auto" width="160"
+                                src="{{ asset('img/kategori_pilihan/legionlp.jpg') }}" alt="">
+                            <img class="border border-dark-subtle border-5 rounded-3 mx-auto" width="160"
+                                src="{{ asset('img/kategori_pilihan/msilp.jpg') }}" alt="">
+                            <img class="border border-dark-subtle border-5 rounded-3 mx-auto" width="160"
+                                src="{{ asset('img/kategori_pilihan/roglp.jpg') }}" alt="">
                         </div>
-                        <div class="pt-3 d-flex">
-                            <div class="card bg-secondary rounded-3 mx-2 ">
-                                <div class="card-body ">
-                                    {{-- <img class="border rounded-3" width="80"
-                                        src="{{ asset('img/kategori_pilihan/accer.png') }}" alt=""> --}}
-                                    <h5 class="fw-bolder text-light ">Accer............._</h5>
-                                </div>
-                            </div>
-                            <div class="card bg-secondary rounded-3 mx-2 ">
-                                <div class="card-body">
-                                    {{-- <img class="border rounded-3" width="80"
-                                        src="{{ asset('img/kategori_pilihan/aple.png') }}" alt=""> --}}
-                                    <h5 class="fw-bolder text-light ">Aple................_</h5>
-                                </div>
-                            </div>
-                            <div class="card bg-secondary rounded-3 mx-2 ">
-                                <div class="card-body">
-                                    {{-- <img class="border rounded-3" width="50"
-                                        src="{{ asset('img/kategori_pilihan/hp.png') }}" alt=""> --}}
-                                    <h5 class="fw-bolder text-light ">Hp..................._</h5>
-                                </div>
-                            </div>
-                            <div class="card bg-secondary rounded-3 mx-2 ">
-                                <div class="card-body">
-                                    {{-- <img class="border rounded-3" width="50"
-                                        src="{{ asset('img/kategori_pilihan/lenovo.png') }}" alt=""> --}}
-                                    <h5 class="fw-bolder text-light ">Lenovo.........._</h5>
-                                </div>
-                            </div>
-                            <div class="card bg-secondary rounded-3 mx-2 ">
-                                <div class="card-body">
-                                    {{-- <img class="border rounded-3" width="50"
-                                        src="{{ asset('img/kategori_pilihan/msi.png') }}" alt=""> --}}
-                                    <h5 class="fw-bolder text-light ">ROG................_</h5>
-                                </div>
-                            </div>
-                            <div class="card bg-secondary rounded-3 mx-2 ">
-                                <div class="card-body">
-                                    {{-- <img class="border rounded-3" width="50"
-                                        src="{{ asset('img/kategori_pilihan/rog.png') }}" alt=""> --}}
-                                    <h5 class="fw-bolder text-light ">MSI................._</h5>
-                                </div>
-                            </div>
+                        <div class="d-flex pt-4">
                         </div>
                     </div>
                 </div>
